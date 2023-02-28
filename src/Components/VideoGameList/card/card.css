@@ -1,0 +1,9 @@
+.card {
+    background-color: var(--background-color);
+    font-size: small;
+
+}
+
+.text-white {
+    color: var(--font-color);
+}

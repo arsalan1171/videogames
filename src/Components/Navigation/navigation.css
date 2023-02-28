@@ -22,3 +22,8 @@
 .nav-link {
     color: var(--font-color)
 }
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: var(--font-color)
+}
