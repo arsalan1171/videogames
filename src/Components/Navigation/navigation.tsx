@@ -6,7 +6,7 @@ import DarkMode from '../DarkMode/dark_mode';
 const Navigation = () => {
 
     return (
-        <Navbar collapseOnSelect className='p-0' bg='bg-light' variant='light' expand='sm'>
+        <Navbar collapseOnSelect bg='bg-light' variant='light' expand='sm'>
             <Container>
                 <Navbar>
                     <p className='m-2 main-heading nav-link'> Video Games</p>

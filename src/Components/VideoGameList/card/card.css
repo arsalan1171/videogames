@@ -1,9 +1,17 @@
 .card {
     background-color: var(--background-color);
     font-size: small;
+    width: 50rem;
 
 }
 
 .text-white {
     color: var(--font-color);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 30rem;
+    }
 }

@@ -1,4 +1,14 @@
 .filter-container {
     border: solid 0.0625rem grey;
     padding: 1.25rem;
+    width: max-content;
+    margin-bottom: 3rem;
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .filter-container {
+        width: 20rem;
+    }
 }

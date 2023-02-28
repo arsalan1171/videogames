@@ -11,7 +11,7 @@ const CardComponent = (props: IVideoGames) => {
 
     return (
         <Card
-            style={{ width: '55rem' }}
+
             className="mb-2"
         >
             <Card.Header>{props.name} <div style={{ float: 'right', fontWeight: 'bold' }}> {props.rating}</div> </Card.Header>
