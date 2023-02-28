@@ -1,1 +1,5 @@
-export { }
+import './filter.css';
+
+const FilterComponent = () => {
+
+}

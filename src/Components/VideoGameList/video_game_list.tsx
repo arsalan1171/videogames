@@ -12,7 +12,6 @@ const VideoGamesList = () => {
             if (isComponentMounted) {
                 setVideoGameList(games);
             }
-
         };
         loadGames();
 
