@@ -1,14 +1,14 @@
 import { IVideoGames } from "../../models/video_games_interface";
 import CardComponent from "./card/card";
 import { useState, useEffect } from "react";
-import getVideoGamesList from "../../api/video_games_api";
+import Data from "../../api/test";
 const VideoGamesList = () => {
-    let [videoGameList, setVideoGameList] = useState<IVideoGames[]>([]);
+    let [videoGameList, setVideoGameList] = useState<any[]>([]);
 
     useEffect(() => {
         let isComponentMounted = true;
         const loadGames = async () => {
-            const games = await getVideoGamesList();
+            const games = Data;
             if (isComponentMounted) {
                 setVideoGameList(games);
             }
@@ -28,7 +28,8 @@ const VideoGamesList = () => {
                         <CardComponent {...game} />
                     </div>
                 ))
-            }</>
+            }
+        </>
     )
 
 }
