@@ -1,14 +1,20 @@
 import { IVideoGames } from "../../models/video_games_interface";
 import CardComponent from "./card/card";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Data from "../../api/test";
+import { CustomContext } from "../context";
+
 const VideoGamesList = () => {
     let [videoGameList, setVideoGameList] = useState<any[]>([]);
 
+    const msg = useContext(CustomContext);
+    const games = Data;
+
     useEffect(() => {
         let isComponentMounted = true;
+
         const loadGames = async () => {
-            const games = Data;
+
             if (isComponentMounted) {
                 setVideoGameList(games);
             }
@@ -20,10 +26,16 @@ const VideoGamesList = () => {
         };
     });
 
+    const filtered = !msg?.name && !msg?.score
+        ? videoGameList
+        : videoGameList.filter((game) =>
+            game.name.toLowerCase().includes(msg?.name.toLowerCase()) || (game.rating === (msg?.score))
+        );
+
     return (
         <>
             {
-                videoGameList.map((game: IVideoGames, index: number) => (
+                filtered.map((game: IVideoGames, index: number) => (
                     <div key={index}>
                         <CardComponent {...game} />
                     </div>
@@ -31,7 +43,6 @@ const VideoGamesList = () => {
             }
         </>
     )
-
 }
 
 export default VideoGamesList;
