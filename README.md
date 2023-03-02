@@ -12,6 +12,8 @@ In the project directory, you can run:
 ![image](https://user-images.githubusercontent.com/25643936/222193720-82b226f1-def0-4642-aec0-3fd4c6a950a1.png)
 
 
+[See Live]https://master--cute-jalebi-68f158.netlify.app/
+
 ### `npm start`
 
 Runs the app in the development mode.\
