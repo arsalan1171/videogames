@@ -20,7 +20,8 @@
 }
 
 .nav-link {
-    color: var(--font-color)
+    color: var(--font-color);
+    margin-left: 20px;
 }
 
 .navbar-nav .nav-link.active,
