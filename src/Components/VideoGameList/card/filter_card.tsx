@@ -1,8 +1,8 @@
 import Card from 'react-bootstrap/Card';
 import { IVideoGames } from '../../../models/video_games_interface';
-import './card.css';
+import './filter_card.css';
 
-const CardComponent = (props: IVideoGames) => {
+const FilterCard = (props: IVideoGames) => {
 
     const dateFormatter = (): string => {
         var date = new Date(props.first_release_date);
@@ -22,4 +22,4 @@ const CardComponent = (props: IVideoGames) => {
     );
 }
 
-export default CardComponent;
+export default FilterCard;

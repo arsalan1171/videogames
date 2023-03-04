@@ -1,5 +1,5 @@
 import { IVideoGames } from "../../models/video_games_interface";
-import CardComponent from "./card/card";
+import FilterCard from "./card/filter_card";
 import { useState, useEffect, useContext } from "react";
 import Data from "../../api/test";
 import { CustomContext } from "../context";
@@ -37,7 +37,7 @@ const VideoGamesList = () => {
             {
                 filtered.map((game: IVideoGames, index: number) => (
                     <div key={index}>
-                        <CardComponent {...game} />
+                        <FilterCard {...game} />
                     </div>
                 ))
             }
