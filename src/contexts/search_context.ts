@@ -3,4 +3,4 @@ interface SearchQueryContextType {
     name: string;
     score: number;
 }
-export const CustomContext = createContext<SearchQueryContextType | null>(null);
+export const SearchContext = createContext<SearchQueryContextType | null>(null);

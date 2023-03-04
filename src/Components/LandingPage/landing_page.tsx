@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import VideoGamesList from '../VideoGameList/video_game_list';
-import { CustomContext } from '../context';
+import { SearchContext } from '../../contexts/search_context';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -43,9 +43,9 @@ const LandingPage = () => {
                             </Button>
                         </Form>
                     </div> </Col>
-                    <CustomContext.Provider value={{ name: name, score: score }}>
+                    <SearchContext.Provider value={{ name: name, score: score }}>
                         <Col>  <VideoGamesList /></Col>
-                    </CustomContext.Provider>
+                    </SearchContext.Provider>
                 </Row>
             </Container>
         </div>

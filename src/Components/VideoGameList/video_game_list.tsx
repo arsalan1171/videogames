@@ -2,12 +2,12 @@ import { IVideoGames } from "../../models/video_games_interface";
 import FilterCard from "./card/filter_card";
 import { useState, useEffect, useContext } from "react";
 import Data from "../../api/test";
-import { CustomContext } from "../context";
+import { SearchContext } from "../../contexts/search_context";
 
 const VideoGamesList = () => {
     let [videoGameList, setVideoGameList] = useState<any[]>([]);
 
-    const msg = useContext(CustomContext);
+    const searchQuery = useContext(SearchContext);
     const games = Data;
 
     useEffect(() => {
@@ -26,10 +26,10 @@ const VideoGamesList = () => {
         };
     });
 
-    const filtered = !msg?.name && !msg?.score
+    const filtered = !searchQuery?.name && !searchQuery?.score
         ? videoGameList
         : videoGameList.filter((game) =>
-            game.name.toLowerCase().includes(msg?.name.toLowerCase()) || (game.rating === (msg?.score))
+            game.name.toLowerCase().includes(searchQuery?.name.toLowerCase()) || (game.rating === (searchQuery?.score))
         );
 
     return (
