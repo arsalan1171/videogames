@@ -10,10 +10,7 @@ const CardComponent = (props: IVideoGames) => {
     }
 
     return (
-        <Card
-
-            className="mb-2"
-        >
+        <Card className="mb-2">
             <Card.Header>{props.name} <div style={{ float: 'right', fontWeight: 'bold' }}> {props.rating}</div> </Card.Header>
             <Card.Body>
                 <Card.Title style={{ fontSize: 12 }}>Release Date: {dateFormatter()} </Card.Title>
