@@ -6,11 +6,9 @@ import DarkMode from '../DarkMode/dark_mode';
 const Navigation = () => {
 
     return (
-        <Navbar collapseOnSelect bg='bg-light' variant='light' expand='sm'>
+        <Navbar variant='light' expand='sm'>
             <Container>
-                <Navbar>
-                    <p className='m-2 main-heading nav-link'> Video Games</p>
-                </Navbar>
+                <p className='m-2 main-heading nav-link'> Video Games</p>
                 <Navbar.Toggle
                     className='border-0'
                     aria-controls='responsive-navbar-nav'
