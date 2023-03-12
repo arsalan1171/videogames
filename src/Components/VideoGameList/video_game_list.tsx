@@ -12,7 +12,6 @@ const VideoGamesList = () => {
 
     useEffect(() => {
         let isComponentMounted = true;
-
         const loadGames = async () => {
 
             if (isComponentMounted) {
