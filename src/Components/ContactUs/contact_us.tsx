@@ -13,9 +13,9 @@ const ContactUs = () => {
     let [email, setEmail] = useState<string>("");
     let [msg, setMsg] = useState<string>("");
 
-    const submitRequest=()=>{
-
-    }
+    const submitRequest=(event: React.MouseEvent<HTMLButtonElement>)=> {
+        setName(name); setEmail(email);setMsg(msg);
+      }
 
     return (
             <Container>
@@ -43,7 +43,7 @@ const ContactUs = () => {
                                 <Form.Control className='apply-dark' as="textarea" rows={3} />
                             </Form.Group>
                            
-                            <Button onClick={()=>alert("")} className='apply-dark'
+                            <Button onClick={(e)=>submitRequest(e)} className='apply-dark'
                                 style={{ border: '1px solid' }} type="button">
                                 Submit
                             </Button>

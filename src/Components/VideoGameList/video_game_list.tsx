@@ -28,7 +28,8 @@ const VideoGamesList = () => {
     const filtered = !searchQuery?.name && !searchQuery?.score
         ? videoGameList
         : videoGameList.filter((game) =>
-            game.name.toLowerCase().includes(searchQuery?.name.toLowerCase()) || (game.rating === (searchQuery?.score))
+            game.name.toLowerCase().includes(searchQuery?.name.toLowerCase())
+             || (game.rating === (searchQuery?.score))
         );
 
     return (

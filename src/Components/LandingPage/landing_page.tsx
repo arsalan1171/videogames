@@ -24,7 +24,7 @@ const LandingPage = () => {
         <div className='container'>
             <Container>
                 <Row>
-                    <Col><div className='filter-container'>
+                    <Col style={{flex:'0 0'}}><div className='filter-container'>
                         <p>Filter Results</p>
                         <Form>
                             <Form.Group className="mb-3" controlId="formName">
