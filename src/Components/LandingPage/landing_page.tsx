@@ -1,12 +1,12 @@
-import './landing_page.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import VideoGamesList from '../VideoGameList/video_game_list';
 import { SearchContext } from '../../contexts/search_context';
-import { useState } from 'react';
+import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { useState } from 'react';
+import './landing_page.css';
 import './filter.css';
 
 const LandingPage = () => {
