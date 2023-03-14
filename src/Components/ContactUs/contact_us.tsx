@@ -25,21 +25,21 @@ const ContactUs = () => {
                         <Form>
                             <Row>
                             <Col> <Form.Group className="mb-3" controlId="formName">
-                                <Form.Label>Name (contains)</Form.Label>
+                                <Form.Label>Name </Form.Label>
                                 <Form.Control className='apply-dark' type="text"
-                                    placeholder="Text (string)" onChange={(e) => setName(e.target.value)} />
+                                    placeholder="Name" onChange={(e) => setName(e.target.value)} />
                             </Form.Group> </Col>
                             <Col>
                             <Form.Group className="mb-3" controlId="formScore">
                                 <Form.Label>Email</Form.Label>
                                 <Form.Control className='apply-dark' type="text"
-                                    placeholder="Enter rating" onChange={(e) => setEmail(e.target.value)} />
+                                    placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
                             </Form.Group>
                             </Col>
                             </Row>
 
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                <Form.Label>Example textarea</Form.Label>
+                                <Form.Label>Message</Form.Label>
                                 <Form.Control className='apply-dark' as="textarea" rows={3} />
                             </Form.Group>
                            
